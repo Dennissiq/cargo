@@ -1,5 +1,5 @@
 // Example 
-import React from "react";
+import * as React from "react";
 
 const TodaysDate = () => <div>{`Today's date is ${Date()}`}</div>;
 
