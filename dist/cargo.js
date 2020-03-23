@@ -5769,6 +5769,18 @@ var templateObject_1, templateObject_2, templateObject_3;
 },{"styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../config/designTokens":"src/config/designTokens.ts"}],"src/components/TodaysDate/TodaysDate.tsx":[function(require,module,exports) {
 "use strict";
 
+var __makeTemplateObject = this && this.__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+
+  return cooked;
+};
+
 var __importStar = this && this.__importStar || function (mod) {
   if (mod && mod.__esModule) return mod;
   var result = {};
@@ -5779,18 +5791,29 @@ var __importStar = this && this.__importStar || function (mod) {
   return result;
 };
 
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 }); // Example 
 
 var React = __importStar(require("react"));
 
+var styled_components_1 = __importDefault(require("styled-components"));
+
+exports.CustomTxt = styled_components_1.default.h1(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    color: #f56;\n"], ["\n    color: #f56;\n"])));
+
 var TodaysDate = function TodaysDate() {
-  return React.createElement("div", null, "Today's date is " + Date());
+  return React.createElement(exports.CustomTxt, null, "Today's date is " + Date());
 };
 
 exports.default = TodaysDate;
-},{"react":"node_modules/react/index.js"}],"src/utils/functions/getDefinedStyle.ts":[function(require,module,exports) {
+var templateObject_1;
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/utils/functions/getDefinedStyle.ts":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6001,7 +6024,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54569" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55360" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
