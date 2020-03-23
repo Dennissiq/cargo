@@ -23,8 +23,6 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "start": "parcel index.js -d dev -p 4002",
-    "serve": "parcel serve *.js -p 4002",
     "watch": "parcel watch index.js --global cargo --out-file cargo.js",
     "build": "parcel build index.js --global cargo --detailed-report --out-file cargo.js"
   }
