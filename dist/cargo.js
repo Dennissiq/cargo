@@ -7,6 +7,6 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./cjs/react.production.min.js":"pyFg"}],"MUrt":[function(require,module,exports) {
 "use strict";var e=this&&this.__importStar||function(e){if(e&&e.__esModule)return e;var r={};if(null!=e)for(var t in e)Object.hasOwnProperty.call(e,t)&&(r[t]=e[t]);return r.default=e,r};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("react")),t=function(){return r.createElement("div",null,"Today's date is "+Date())};exports.default=t;
 },{"react":"HdMw"}],"Focm":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"TodaysDate",{enumerable:!0,get:function(){return e.default}});var e=t(require("./src/components/TodaysDate/TodaysDate.tsx"));function t(e){return e&&e.__esModule?e:{default:e}}
-},{"./src/components/TodaysDate/TodaysDate.tsx":"MUrt"}]},{},["Focm"], "cargo")
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"TodaysDate",{enumerable:!0,get:function(){return e.default}});var e=t(require("./src/components/TodaysDate/TodaysDate"));function t(e){return e&&e.__esModule?e:{default:e}}
+},{"./src/components/TodaysDate/TodaysDate":"MUrt"}]},{},["Focm"], "cargo")
 //# sourceMappingURL=/cargo.js.map
