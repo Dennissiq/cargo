@@ -5813,7 +5813,31 @@ var TodaysDate = function TodaysDate() {
 
 exports.default = TodaysDate;
 var templateObject_1;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/utils/functions/getDefinedStyle.ts":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/components/OtherTodaysDate/OtherTodaysDate.tsx":[function(require,module,exports) {
+"use strict";
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  }
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}); // Example 
+
+var React = __importStar(require("react"));
+
+var OtherTodaysDate = function OtherTodaysDate() {
+  return React.createElement("h1", null, "Today's date is " + Date());
+};
+
+exports.default = OtherTodaysDate;
+},{"react":"node_modules/react/index.js"}],"src/utils/functions/getDefinedStyle.ts":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5955,7 +5979,8 @@ Object.defineProperty(exports, "__esModule", {
 var _exportNames = {
   GlobalStyles: true,
   Background: true,
-  TodaysDate: true
+  TodaysDate: true,
+  OtherTodaysDate: true
 };
 Object.defineProperty(exports, "GlobalStyles", {
   enumerable: true,
@@ -5975,12 +6000,20 @@ Object.defineProperty(exports, "TodaysDate", {
     return _TodaysDate.default;
   }
 });
+Object.defineProperty(exports, "OtherTodaysDate", {
+  enumerable: true,
+  get: function () {
+    return _OtherTodaysDate.default;
+  }
+});
 
 var _GlobalStyles = _interopRequireDefault(require("./src/components/GlobalStyles/GlobalStyles"));
 
 var _Background = _interopRequireDefault(require("./src/components/Background/Background"));
 
 var _TodaysDate = _interopRequireDefault(require("./src/components/TodaysDate/TodaysDate"));
+
+var _OtherTodaysDate = _interopRequireDefault(require("./src/components/OtherTodaysDate/OtherTodaysDate"));
 
 var _Button = require("./src/components/Button/Button");
 
@@ -5996,7 +6029,7 @@ Object.keys(_Button).forEach(function (key) {
 });
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./src/components/GlobalStyles/GlobalStyles":"src/components/GlobalStyles/GlobalStyles.tsx","./src/components/Background/Background":"src/components/Background/Background.tsx","./src/components/TodaysDate/TodaysDate":"src/components/TodaysDate/TodaysDate.tsx","./src/components/Button/Button":"src/components/Button/Button.tsx"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./src/components/GlobalStyles/GlobalStyles":"src/components/GlobalStyles/GlobalStyles.tsx","./src/components/Background/Background":"src/components/Background/Background.tsx","./src/components/TodaysDate/TodaysDate":"src/components/TodaysDate/TodaysDate.tsx","./src/components/OtherTodaysDate/OtherTodaysDate":"src/components/OtherTodaysDate/OtherTodaysDate.tsx","./src/components/Button/Button":"src/components/Button/Button.tsx"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -6024,7 +6057,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55955" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56145" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
