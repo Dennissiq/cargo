@@ -25,8 +25,7 @@
   "scripts": {
     "start": "parcel index.js -d dev -p 4002",
     "serve": "parcel serve *.js -p 4002",
-    "build:parcel": "parcel build index.js --global cargo --detailed-report --out-file cargo.js",
-    "build": "babel src -d build --copy-files",
+    "build:": "parcel build index.js --global cargo --detailed-report --out-file cargo.js",
     "prepare": "yarn run build"
   }
 }
