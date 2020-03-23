@@ -2,7 +2,7 @@
   "name": "cargo",
   "version": "1.0.0",
   "description": "Youse Cargo Components",
-  "main": "dist/cargo.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/Dennissiq/cargo.git",
   "author": "Youse",
   "license": "UNLICENSED",
@@ -15,17 +15,13 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-react": "^7.9.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
     "parcel-bundler": "^1.12.4",
     "typescript": "^3.8.3"
   },
   "scripts": {
     "start": "parcel index.js -d dev -p 4002",
     "serve": "parcel serve *.js -p 4002",
-    "build": "parcel build index.js --global cargo --detailed-report --out-file cargo.js",
-    "prepare": "yarn run build"
+    "build": "parcel build index.js --global cargo --detailed-report --out-file cargo.js"
   }
 }
